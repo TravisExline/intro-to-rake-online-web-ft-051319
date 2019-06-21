@@ -3,9 +3,9 @@ task :hello do
   puts "hello from Rake!"
 end
 
-namespace :db do 
+namespace :db do
   desc 'migrate changes to your database'
-  task :migrate => :environment do 
+  task :migrate => :environment do
     Students.create_table
   end
 end
